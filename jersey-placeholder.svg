@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 900" role="img" aria-labelledby="title desc">
+<title id="title">RIVAL jersey placeholder</title>
+<desc id="desc">Placeholder shown when the jersey image is unavailable.</desc>
+<rect width="700" height="900" fill="#151515"/>
+<path d="M205 180 100 235l55 150 80-40v330h230V345l80 40 55-150-105-55-90 65H295z" fill="#242424" stroke="#f2f2f2" stroke-width="4"/>
+<path d="M250 195c20 42 45 62 100 62s80-20 100-62" fill="none" stroke="#f2f2f2" stroke-width="4"/>
+<text x="350" y="510" fill="#f2f2f2" font-family="Arial,sans-serif" font-size="54" text-anchor="middle" font-weight="700">RIVAL</text>
+<text x="350" y="565" fill="#aaa" font-family="Arial,sans-serif" font-size="24" text-anchor="middle">JERSEY IMAGE</text>
+</svg>

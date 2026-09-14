@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Shop Jerseys — RIVAL</title>
+<meta name="description" content="Shop RIVAL home, away, retro, and training jerseys. Filter by team, size, and price." />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com" rel="preconnect" />
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://cdn.prod.website-files.com/68b66c48701b3665c1f0ee19/css/modevo-fashion.webflow.shared.429dbf900.css" rel="stylesheet" type="text/css" />
+<link href="brand.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="page-wrapper">
+<div class="main-wrapper">
+
+  <!-- NAV -->
+  <div class="navbar" data-collapse="medium">
+    <div class="container">
+      <div class="navbar-wrapper">
+        <a href="index.html" class="navbar-brand w-nav-brand">RIVAL</a>
+        <nav class="nav-menu-wrapper">
+          <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="shop.html" aria-current="page" class="nav-link w--current">Shop</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+        </nav>
+        <div class="nav-right-block">
+          <div class="nav-line"></div>
+          <button class="cart-button" data-cart-open aria-label="Open cart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="cart-icon"><path d="M6 8h12l-1 12H7L6 8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.5"/></svg>
+            <div class="cart-quantity">0</div>
+          </button>
+        </div>
+        <button class="menu-button w-nav-button" aria-label="Toggle menu">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M4 8h18M4 13h18M4 18h18" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="wrapper shop-wrapper" style="padding-top:60px;">
+
+      <div class="style-guide-hero-contens" style="align-items:flex-end;">
+        <div>
+          <p class="subtitle">Shop</p>
+          <h1 class="style-hero-title" style="font-size:64px;">All Jerseys</h1>
+        </div>
+      </div>
+
+      <button class="mobile-filter-toggle" data-mobile-filter-toggle type="button">Filter &amp; Sort</button>
+
+      <div class="shop-layout">
+
+        <!-- FILTERS -->
+        <aside class="filter-panel">
+          <button class="filter-panel-close" aria-label="Close filters">&times;</button>
+
+          <div class="filter-group">
+            <div class="filter-group-title">Team</div>
+            <div class="filter-options">
+              <label class="filter-option"><input type="checkbox" data-filter-team value="nova" /> Nova United</label>
+              <label class="filter-option"><input type="checkbox" data-filter-team value="ironwolves" /> Iron Wolves</label>
+              <label class="filter-option"><input type="checkbox" data-filter-team value="crimson" /> Crimson Athletic</label>
+              <label class="filter-option"><input type="checkbox" data-filter-team value="titan" /> Titan Rovers</label>
+              <label class="filter-option"><input type="checkbox" data-filter-team value="storm" /> Storm Riders</label>
+              <label class="filter-option"><input type="checkbox" data-filter-team value="phoenix" /> Phoenix Rising</label>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-title">Size</div>
+            <div class="filter-swatches">
+              <label class="filter-option" style="gap:0;position:relative;"><input type="checkbox" data-filter-size value="S" style="position:absolute;opacity:0;width:44px;height:44px;cursor:pointer;" /><span class="size-swatch">S</span></label>
+              <label class="filter-option" style="gap:0;position:relative;"><input type="checkbox" data-filter-size value="M" style="position:absolute;opacity:0;width:44px;height:44px;cursor:pointer;" /><span class="size-swatch">M</span></label>
+              <label class="filter-option" style="gap:0;position:relative;"><input type="checkbox" data-filter-size value="L" style="position:absolute;opacity:0;width:44px;height:44px;cursor:pointer;" /><span class="size-swatch">L</span></label>
+              <label class="filter-option" style="gap:0;position:relative;"><input type="checkbox" data-filter-size value="XL" style="position:absolute;opacity:0;width:44px;height:44px;cursor:pointer;" /><span class="size-swatch">XL</span></label>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-title">Price</div>
+            <div class="price-range">
+              <input type="range" min="60" max="150" value="150" data-filter-price />
+              <div class="price-range-value">Up to $150</div>
+            </div>
+          </div>
+
+          <button class="clear-filters-btn" data-clear-filters type="button">Clear all filters</button>
+        </aside>
+
+        <!-- GRID -->
+        <div>
+          <div class="shop-toolbar">
+            <div class="results-count" data-results-count>9 jerseys</div>
+            <select class="sort-select" data-sort-select>
+              <option value="featured">Sort: Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="name-asc">Name: A–Z</option>
+            </select>
+          </div>
+
+          <div class="collection-list-wrapper-shop">
+            <div class="collection-list-shop" data-shop-grid>
+
+              <a href="product.html" class="shop-item" data-team="nova" data-sizes="S,M,L,XL" data-price="89" data-name="Nova United Home Jersey">
+                <div class="shop-image-wrap">
+                  <span class="product-badge">New</span>
+                  <img src="assets/jersey.jpg" loading="lazy" alt="Nova United Home Jersey" class="shop-image" />
+                </div>
+                <div class="shop-item-content">
+                  <div>
+                    <div class="shop-item-name">Nova United Home</div>
+                    <div class="large-paragraph shop-item-price">$89</div>
+                  </div>
+                  <button class="explore-button" style="padding:12px 22px;font-size:15px;" data-quick-add type="button">Quick Add</button>
+                </div>
+              </a>
+
+              <a href="product.html" class="shop-item" data-team="nova" data-sizes="M,L,XL" data-price="89" data-name="Nova United Away Jersey">
+                <div class="shop-image-wrap">
+                  <img src="https://placehold.co/700x900/1a1a1a/f2f2f2?text=Nova+United+Away" loading="lazy" alt="Nova United Away Jersey" class="shop-image" />
+                </div>
+                <div class="shop-item-content">
+                  <div>
+                    <div class="shop-item-name">Nova United Away</div>
+                    <div class="large-paragraph shop-item-price">$89</div>
+                  </div>
+                  <button class="explore-button" style="padding:12px 22px;font-size:15px;" data-quick-add type="button">Quick Add</button>
+                </div>
+              </a>
+
+              <a href="product.html" class="shop-item" data-team="ironwolves" data-sizes="S,M,L" data-price="94" data-name="Iron Wolves Home Jersey">
+                <div class="shop-image-wrap">
+                  <img src="https://placehold.co/700x900/141414/f2f2f2?text=Iron+Wolves+Home" loading="lazy" alt="Iron Wolves Home Jersey" class="shop-image" />
+                </div>
+                <div class="shop-item-content">
+                  <div>
+                    <div class="shop-item-name">Iron Wolves Home</div>
+                    <div class="large-paragraph shop-item-price">$94</div>
+                  </div>
+                  <button class="explore-button" style="padding:12px 22px;font-size:15px;" data-quick-add type="button">Quick Add</button>
+                </div>
+              </a>
+
+              <a href="product.html" class="shop-item" data-team="ironwolves" data-sizes="S,M,L,XL" data-price="94" data-name="Iron Wolves Away Jersey">
+                <div class="shop-image-wrap">
+                  <span class="product-badge" style="background-color:var(--accent);">Sale</span>
+                  <img src="https://placehold.co/700x900/181818/f2f2f2?text=Iron+Wolves+Away" loading="lazy" alt="Iron Wolves Away Jersey" class="shop-image" />
+                </div>
+                <div class="shop-item-content">
+                  <div>
+                    <div class="shop-item-name">Iron Wolves Away</div>
+                    <div class="large-paragraph shop-item-price">$94</div>
+                  </div>
+                  <button class="explore-button" style="padding:12px 22px;font-size:15px;" data-quick-add type="button">Quick Add</button>
+                </div>
+              </a>
+
+              <a href="product.html" class="shop-item" data-team="crimson" data-sizes="M,L,XL" data-price="99" data-name="Crimson Athletic Home Jersey">
+                <div class="shop-image-wrap">
+                  <img src="https://placehold.co/700x900/161616/f2f2f2?text=Crimson+Athletic+Home" loading="lazy" alt="Crimson Athletic Home Jersey" class="shop-image" />
+                </div>
+                <div class="shop-item-content">
+                  <div>
+                    <div class="shop-item-name">Crimson Athletic Home</div>
+                    <div class="large-paragraph shop-item-price">$99</div>
+                  </div>
+                  <button class="explore-button" style="padding:12px 22px;font-size:15px;" data-quick-add type="button">Quick Add</button>
+                </div>
+              </a>
+
+              <a href="product.html" class="shop-item" data-team="titan" data-sizes="S,M,L" data-price="129" data-name="Titan Rovers Retro Jersey">
+                <div class="shop-image-wrap">
+                  <span class="product-badge badge-muted">Retro</span>
+                  <img src="https://placehold.co/700x900/101010/f2f2f2?text=Titan+Rovers+Retro" loading="lazy" alt="Titan Rovers Retro Jersey" class="shop-image" />
+                </div>
+                <div class="shop-item-content">
+                  <div>
+                    <div class="shop-item-name">Titan Rovers Retro</div>
+                    <div class="large-paragraph shop-item-price">$129</div>
+                  </div>
+                  <button class="explore-button" style="padding:12px 22px;font-size:15px;" data-quick-add type="button">Quick Add</button>
+                </div>
+              </a>
+
+              <a href="product.html" class="shop-item" data-team="storm" data-sizes="S,M,L,XL" data-price="69" data-name="Storm Riders Training Kit">
+                <div class="shop-image-wrap">
+                  <img src="https://placehold.co/700x900/171717/f2f2f2?text=Storm+Riders+Training" loading="lazy" alt="Storm Riders Training Kit" class="shop-image" />
+                </div>
+                <div class="shop-item-content">
+                  <div>
+                    <div class="shop-item-name">Storm Riders Training</div>
+                    <div class="large-paragraph shop-item-price">$69</div>
+                  </div>
+                  <button class="explore-button" style="padding:12px 22px;font-size:15px;" data-quick-add type="button">Quick Add</button>
+                </div>
+              </a>
+
+              <a href="product.html" class="shop-item" data-team="phoenix" data-sizes="S,M,L,XL" data-price="92" data-name="Phoenix Rising Home Jersey">
+                <div class="shop-image-wrap">
+                  <img src="https://placehold.co/700x900/131313/f2f2f2?text=Phoenix+Rising+Home" loading="lazy" alt="Phoenix Rising Home Jersey" class="shop-image" />
+                </div>
+                <div class="shop-item-content">
+                  <div>
+                    <div class="shop-item-name">Phoenix Rising Home</div>
+                    <div class="large-paragraph shop-item-price">$92</div>
+                  </div>
+                  <button class="explore-button" style="padding:12px 22px;font-size:15px;" data-quick-add type="button">Quick Add</button>
+                </div>
+              </a>
+
+              <a href="product.html" class="shop-item" data-team="phoenix" data-sizes="M,L" data-price="92" data-name="Phoenix Rising Away Jersey">
+                <div class="shop-image-wrap">
+                  <img src="https://placehold.co/700x900/1c1c1c/f2f2f2?text=Phoenix+Rising+Away" loading="lazy" alt="Phoenix Rising Away Jersey" class="shop-image" />
+                </div>
+                <div class="shop-item-content">
+                  <div>
+                    <div class="shop-item-name">Phoenix Rising Away</div>
+                    <div class="large-paragraph shop-item-price">$92</div>
+                  </div>
+                  <button class="explore-button" style="padding:12px 22px;font-size:15px;" data-quick-add type="button">Quick Add</button>
+                </div>
+              </a>
+
+            </div>
+            <div class="empty-state" data-empty-state style="display:none;">No jerseys match those filters. Try clearing a few.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="footer-wrapper">
+      <div class="container">
+        <div class="footer-top-content">
+          <a href="index.html" class="footer-logo-link w-inline-block">
+            <div class="navbar-brand" style="font-size:45px;">RIVAL</div>
+          </a>
+          <div class="footer-contact-info">
+            <a href="tel:+18885550172" class="footer-phone-link">(+1) 888 555 0172</a>
+            <a href="mailto:team@rivaljerseys.com" class="footer-email-link">team@rival.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-bottom-content">
+          <div class="footer-social-block social">
+            <div class="base-large footer-pages-header">FOLLOW US</div>
+            <div class="footer-social-icons">
+              <a href="#" target="_blank" class="footer-social-link w-inline-block" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none"><path d="M15 8H13a2 2 0 0 0-2 2v10M8 12h6" stroke="currentColor" stroke-width="1.6"/></svg></a>
+              <a href="#" target="_blank" class="footer-social-link w-inline-block" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+              <a href="#" target="_blank" class="footer-social-link w-inline-block" aria-label="TikTok"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5" stroke="currentColor" stroke-width="1.6"/><path d="M14 4a4 4 0 0 0 4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+            </div>
+            <div class="copyright-text">&copy; RIVAL 2026 | Built for game day.</div>
+          </div>
+          <div class="footer-pages-link">
+            <div class="footer-social-block">
+              <div class="base-large footer-pages-header">SHOP</div>
+              <div class="pages-link">
+                <a href="index.html" class="page-link">Home</a>
+                <a href="shop.html" aria-current="page" class="page-link w--current">All Jerseys</a>
+                <a href="about.html" class="page-link">About</a>
+              </div>
+            </div>
+            <div class="footer-social-block">
+              <div class="base-large footer-pages-header">SUPPORT</div>
+              <div class="pages-link">
+                <a href="contact.html" class="page-link">Contact</a>
+                <a href="contact.html#faq" class="page-link">FAQ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="company-lago-text">RIVAL</h2>
+    </div>
+  </section>
+
+</div>
+</div>
+
+<!-- CART DRAWER -->
+<div class="cart-drawer-overlay" data-cart-close></div>
+<div class="cart-drawer">
+  <div class="cart-drawer-header">
+    <h4 class="cart-title">Your Cart</h4>
+    <button class="cart-drawer-close" data-cart-close aria-label="Close cart">&times;</button>
+  </div>
+  <div class="cart-drawer-items"></div>
+  <div class="cart-drawer-footer">
+    <div class="cart-drawer-subtotal"><span>Subtotal</span><span class="cart-drawer-subtotal-value">$0.00</span></div>
+    <button class="cart-drawer-checkout" type="button">Checkout</button>
+  </div>
+</div>
+<div class="cart-toast"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
